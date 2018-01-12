@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CollapsibleTableViewHeaderDelegate {
+public protocol CollapsibleTableViewHeaderDelegate: NSObjectProtocol {
     func toggleSection(_ section: Int)
 }
 
@@ -73,7 +73,6 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         //
         arrowLabel.rotate(collapsed ? 0.0 : .pi / 2)
     }
-    
 }
 
 extension UIColor {
@@ -86,7 +85,6 @@ extension UIColor {
             alpha: alpha
         )
     }
-    
 }
 
 extension UIView {
@@ -101,7 +99,4 @@ extension UIView {
         
         self.layer.add(animation, forKey: nil)
     }
-    
 }
-
-
