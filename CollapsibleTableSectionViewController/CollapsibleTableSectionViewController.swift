@@ -61,20 +61,14 @@ public protocol CollapsibleTableSectionDelegate {
 open class CollapsibleTableSectionViewController: UIViewController, CollapsibleTableViewHeaderDelegate {
     
     public var delegate: CollapsibleTableSectionDelegate?
-    
-    // TODO: ac
-//    fileprivate var _tableView: UITableView!
     public var _tableView: UITableView!
     
     fileprivate var _sectionsState = [Int : Bool]()
     
     public func isSectionCollapsed(_ section: Int) -> Bool {
-//         turn off to allow asking each time.
         if _sectionsState.index(forKey: section) == nil {
             _sectionsState[section] = delegate?.shouldCollapseByDefault(_tableView, section: section) ?? false
         }
-        
-//        _sectionsState[section] = delegate?.shouldCollapseByDefault(_tableView, section: section) ?? false
         return _sectionsState[section]!
     }
     
@@ -175,7 +169,6 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
         header.setCollapsed(isSectionCollapsed(section))
         
         header.section = section
-        //        header.delegate = self // TODO: ac
         
         return header
     }
