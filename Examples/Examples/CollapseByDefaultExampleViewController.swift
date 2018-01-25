@@ -16,7 +16,7 @@ class CollapseByDefaultExampleViewController: CollapsibleTableSectionViewControl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.delegate = self
+        self.tableView.clpDelegate = self
     }
     
 }
