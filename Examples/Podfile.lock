@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   CollapsibleTableSectionViewController:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  CollapsibleTableSectionViewController: 4ff024a93b0a05ccd7b34eb13dfe2faa9c65093f
+  CollapsibleTableSectionViewController: 608df3a782355facc44e4ab140157d3afe191fb2
 
 PODFILE CHECKSUM: b149b5d80e25f3d625e94e3d09cdfbe5a437add7
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.0.beta.1
