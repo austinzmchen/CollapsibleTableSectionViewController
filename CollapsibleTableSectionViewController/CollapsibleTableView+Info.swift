@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Item: NSObject {
+public class TableItem: NSObject {
     public var name: String
     public var detail: String
     public var url: String?
@@ -19,13 +19,13 @@ public class Item: NSObject {
     }
 }
 
-public class Section: NSObject {
+public class TableSection: NSObject {
     public var name: String
     public var icon: String
     public var url: String?
-    public var items: [Item]
+    public var items: [TableItem]
     
-    public init(name: String, icon: String, url: String?, items: [Item]) {
+    public init(name: String, icon: String, url: String?, items: [TableItem]) {
         self.name = name
         self.icon = icon
         self.url = url

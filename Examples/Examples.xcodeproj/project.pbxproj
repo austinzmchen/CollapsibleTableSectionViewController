@@ -18,6 +18,17 @@
 		0AC886E61F226627007E4E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC886E51F226627007E4E2F /* Assets.xcassets */; };
 		0AC886E91F226627007E4E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC886E71F226627007E4E2F /* LaunchScreen.storyboard */; };
 		1954D61128E2AEA6960297AB /* Pods_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540185A9FAB3B385AE8ED8A6 /* Pods_Examples.framework */; };
+		C4513FB2215B285800232035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4513FB1215B285800232035 /* Main.storyboard */; };
+		C4513FBC215B2C0700232035 /* MBMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FBA215B29DE00232035 /* MBMenuViewController.swift */; };
+		C4513FBD215B2C0700232035 /* MBMenuViewController+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FBB215B29DE00232035 /* MBMenuViewController+Constants.swift */; };
+		C4513FBE215B2C0700232035 /* MBCollapsibleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FB8215B299B00232035 /* MBCollapsibleTableView.swift */; };
+		C4513FBF215B2C0700232035 /* MBCollapsibleTableViewDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FB4215B299B00232035 /* MBCollapsibleTableViewDataDelegate.swift */; };
+		C4513FC0215B2C0700232035 /* MBCollapsibleTableViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FB9215B299C00232035 /* MBCollapsibleTableViewFooter.swift */; };
+		C4513FC1215B2C0700232035 /* MBCollapsibleTableViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4513FB5215B299B00232035 /* MBCollapsibleTableViewFooter.xib */; };
+		C4513FC2215B2C0700232035 /* MBCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FB6215B299B00232035 /* MBCollapsibleTableViewHeader.swift */; };
+		C4513FC3215B2C0700232035 /* MBCollapsibleTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4513FB7215B299B00232035 /* MBCollapsibleTableViewHeader.xib */; };
+		C4513FC6215B31CF00232035 /* MBMenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FC5215B31CE00232035 /* MBMenuTableCell.swift */; };
+		C4513FC7215B331F00232035 /* MBMenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4513FC4215B31CE00232035 /* MBMenuTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +47,17 @@
 		3C62BC05B19E169D1565F49A /* Pods-Examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examples/Pods-Examples.release.xcconfig"; sourceTree = "<group>"; };
 		540185A9FAB3B385AE8ED8A6 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A48C72D331DE20192DED484 /* Pods-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examples/Pods-Examples.debug.xcconfig"; sourceTree = "<group>"; };
+		C4513FB1215B285800232035 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4513FB4215B299B00232035 /* MBCollapsibleTableViewDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCollapsibleTableViewDataDelegate.swift; sourceTree = "<group>"; };
+		C4513FB5215B299B00232035 /* MBCollapsibleTableViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBCollapsibleTableViewFooter.xib; sourceTree = "<group>"; };
+		C4513FB6215B299B00232035 /* MBCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		C4513FB7215B299B00232035 /* MBCollapsibleTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBCollapsibleTableViewHeader.xib; sourceTree = "<group>"; };
+		C4513FB8215B299B00232035 /* MBCollapsibleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCollapsibleTableView.swift; sourceTree = "<group>"; };
+		C4513FB9215B299C00232035 /* MBCollapsibleTableViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCollapsibleTableViewFooter.swift; sourceTree = "<group>"; };
+		C4513FBA215B29DE00232035 /* MBMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuViewController.swift; sourceTree = "<group>"; };
+		C4513FBB215B29DE00232035 /* MBMenuViewController+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBMenuViewController+Constants.swift"; sourceTree = "<group>"; };
+		C4513FC4215B31CE00232035 /* MBMenuTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBMenuTableCell.xib; sourceTree = "<group>"; };
+		C4513FC5215B31CE00232035 /* MBMenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,7 @@
 		0A6AFF911F2EB6DE00FA070E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C4513FB3215B28C200232035 /* Custom */,
 				0AC886E01F226627007E4E2F /* BasicExampleViewController.swift */,
 				0A6AFF891F2EB15600FA070E /* CollapseByDefaultExampleViewController.swift */,
 				0A6AFF8D1F2EB49100FA070E /* CustomCellExampleViewController.swift */,
@@ -90,6 +113,7 @@
 				0A344C561F26580700350307 /* CustomCell.swift */,
 				0A6AFF871F2E912100FA070E /* ExamplesListViewController.swift */,
 				0A6AFF8B1F2EB20D00FA070E /* ExampleData.swift */,
+				C4513FB1215B285800232035 /* Main.storyboard */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -100,6 +124,23 @@
 				540185A9FAB3B385AE8ED8A6 /* Pods_Examples.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4513FB3215B28C200232035 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C4513FC5215B31CE00232035 /* MBMenuTableCell.swift */,
+				C4513FC4215B31CE00232035 /* MBMenuTableCell.xib */,
+				C4513FBA215B29DE00232035 /* MBMenuViewController.swift */,
+				C4513FBB215B29DE00232035 /* MBMenuViewController+Constants.swift */,
+				C4513FB8215B299B00232035 /* MBCollapsibleTableView.swift */,
+				C4513FB4215B299B00232035 /* MBCollapsibleTableViewDataDelegate.swift */,
+				C4513FB9215B299C00232035 /* MBCollapsibleTableViewFooter.swift */,
+				C4513FB5215B299B00232035 /* MBCollapsibleTableViewFooter.xib */,
+				C4513FB6215B299B00232035 /* MBCollapsibleTableViewHeader.swift */,
+				C4513FB7215B299B00232035 /* MBCollapsibleTableViewHeader.xib */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 		F50AF0A7224297DBF5B5786D /* Pods */ = {
@@ -145,7 +186,7 @@
 				TargetAttributes = {
 					0AC886DA1F226627007E4E2F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = DJEZ3HHH6P;
+						DevelopmentTeam = P2PHZ9K5JJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -173,7 +214,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4513FC7215B331F00232035 /* MBMenuTableCell.xib in Resources */,
+				C4513FC1215B2C0700232035 /* MBCollapsibleTableViewFooter.xib in Resources */,
+				C4513FB2215B285800232035 /* Main.storyboard in Resources */,
 				0AC886E91F226627007E4E2F /* LaunchScreen.storyboard in Resources */,
+				C4513FC3215B2C0700232035 /* MBCollapsibleTableViewHeader.xib in Resources */,
 				0AC886E61F226627007E4E2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,13 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4513FBF215B2C0700232035 /* MBCollapsibleTableViewDataDelegate.swift in Sources */,
+				C4513FC0215B2C0700232035 /* MBCollapsibleTableViewFooter.swift in Sources */,
+				C4513FBC215B2C0700232035 /* MBMenuViewController.swift in Sources */,
 				0AC886E11F226627007E4E2F /* BasicExampleViewController.swift in Sources */,
+				C4513FC2215B2C0700232035 /* MBCollapsibleTableViewHeader.swift in Sources */,
 				0A6AFF8E1F2EB49100FA070E /* CustomCellExampleViewController.swift in Sources */,
 				0A344C571F26580700350307 /* CustomCell.swift in Sources */,
 				0A6AFF8C1F2EB20D00FA070E /* ExampleData.swift in Sources */,
+				C4513FC6215B31CF00232035 /* MBMenuTableCell.swift in Sources */,
 				0A6AFF8A1F2EB15600FA070E /* CollapseByDefaultExampleViewController.swift in Sources */,
 				0A6AFF881F2E912100FA070E /* ExamplesListViewController.swift in Sources */,
 				0AC886DF1F226627007E4E2F /* AppDelegate.swift in Sources */,
+				C4513FBD215B2C0700232035 /* MBMenuViewController+Constants.swift in Sources */,
+				C4513FBE215B2C0700232035 /* MBCollapsibleTableView.swift in Sources */,
 				0A6AFF901F2EB6D600FA070E /* CollapseOthersExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,13 +401,13 @@
 			baseConfigurationReference = 9A48C72D331DE20192DED484 /* Pods-Examples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DJEZ3HHH6P;
+				DEVELOPMENT_TEAM = P2PHZ9K5JJ;
 				INFOPLIST_FILE = Examples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jeantimex.com.Examples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -364,13 +416,13 @@
 			baseConfigurationReference = 3C62BC05B19E169D1565F49A /* Pods-Examples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DJEZ3HHH6P;
+				DEVELOPMENT_TEAM = P2PHZ9K5JJ;
 				INFOPLIST_FILE = Examples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jeantimex.com.Examples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

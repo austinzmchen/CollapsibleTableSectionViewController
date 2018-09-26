@@ -12,7 +12,7 @@ import UIKit
 //
 @objc public protocol CollapsibleTableSectionDelegate: class {
     @objc optional func numberOfSections(_ tableView: UITableView) -> Int
-    @objc optional func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> Section
+    @objc optional func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection
     
     // cell
     @objc optional func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
