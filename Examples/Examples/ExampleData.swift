@@ -11,7 +11,7 @@ import Foundation
 //
 // MARK: - Section Data Structure
 //
-public struct Item {
+public class Item {
     public var name: String
     public var detail: String
     
@@ -21,7 +21,7 @@ public struct Item {
     }
 }
 
-public struct Section {
+public class Section {
     public var name: String
     public var items: [Item]
     

@@ -22,6 +22,33 @@ class CustomCellExampleViewController: CollapsibleTableSectionViewController {
 }
 
 extension CustomCellExampleViewController: CollapsibleTableSectionDelegate {
+    func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection? {
+        return nil
+    }
+    
+    func collapsibleTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func collapsibleTableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44.0
+    }
+    
+    func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collapsibleTableView(_ tableView: UITableView, didSelectSectionHeaderAt section: Int) {}
+    
+    func collapsibleTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    
+    func shouldCollapseByDefault(_ tableView: UITableView, section: Int) -> Bool {
+        return true
+    }
+    
+    func shouldCollapseOthers(_ tableView: UITableView) -> Bool {
+        return false
+    }
     
     func numberOfSections(_ tableView: UITableView) -> Int {
         return sections.count

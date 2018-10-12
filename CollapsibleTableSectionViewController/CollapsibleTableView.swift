@@ -10,22 +10,22 @@ import UIKit
 //
 // MARK: - CollapsibleTableSectionDelegate
 //
-@objc public protocol CollapsibleTableSectionDelegate: class {
-    @objc optional func numberOfSections(_ tableView: UITableView) -> Int
-    @objc optional func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection
+public protocol CollapsibleTableSectionDelegate: class {
+    func numberOfSections(_ tableView: UITableView) -> Int
+    func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection?
     
     // cell
-    @objc optional func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    @objc optional func collapsibleTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func collapsibleTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     // header/footer
-    @objc optional func collapsibleTableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
-    @objc optional func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat
+    func collapsibleTableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
+    func collapsibleTableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat
     
     //  actions
-    @objc optional func collapsibleTableView(_ tableView: UITableView, didSelectSectionHeaderAt section: Int)
-    @objc optional func collapsibleTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    @objc optional func shouldCollapseByDefault(_ tableView: UITableView, section: Int) -> Bool
-    @objc optional func shouldCollapseOthers(_ tableView: UITableView) -> Bool
+    func collapsibleTableView(_ tableView: UITableView, didSelectSectionHeaderAt section: Int)
+    func collapsibleTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    func shouldCollapseByDefault(_ tableView: UITableView, section: Int) -> Bool
+    func shouldCollapseOthers(_ tableView: UITableView) -> Bool
 }
 
 open class CollapsibleTableView: UITableView {
@@ -37,7 +37,7 @@ open class CollapsibleTableView: UITableView {
     
     public func isSectionCollapsed(_ section: Int) -> Bool {
         if _sectionsState.index(forKey: section) == nil {
-            _sectionsState[section] = clpDelegate?.shouldCollapseByDefault?(self, section: section) ?? false
+            _sectionsState[section] = clpDelegate?.shouldCollapseByDefault(self, section: section) ?? false
         }
         return _sectionsState[section]!
     }
@@ -56,7 +56,7 @@ open class CollapsibleTableView: UITableView {
         // Update the sections state
         _sectionsState[section] = isCollapsed
         
-        let shouldCollapseOthers = clpDelegate?.shouldCollapseOthers?(self) ?? false
+        let shouldCollapseOthers = clpDelegate?.shouldCollapseOthers(self) ?? false
         
         if !isCollapsed && shouldCollapseOthers {
             // Find out which sections need to be collapsed
@@ -82,7 +82,7 @@ open class CollapsibleTableView: UITableView {
         
         // Auto resizing the height of the cell
         estimatedRowHeight = 44.0
-        rowHeight = UITableViewAutomaticDimension
+        rowHeight = UITableView.automaticDimension
     }
     
     // Delegate method

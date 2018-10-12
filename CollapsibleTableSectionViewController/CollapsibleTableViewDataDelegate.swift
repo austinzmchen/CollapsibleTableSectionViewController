@@ -17,32 +17,32 @@ open class CollapsibleTableViewDataDelegate: NSObject, UITableViewDataSource, UI
     }
     
     open func numberOfSections(in tableView: UITableView) -> Int {
-        return tView.clpDelegate?.numberOfSections?(tView) ?? 1
+        return tView.clpDelegate?.numberOfSections(tView) ?? 1
     }
     
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numberOfRows = tView.clpDelegate?.collapsibleTableView?(tView, sectionInfoAt: section).items.count ?? 0
+        let numberOfRows = tView.clpDelegate?.collapsibleTableView(tView, sectionInfoAt: section)?.items.count ?? 0
         return tView.isSectionCollapsed(section) ? 0 : numberOfRows
     }
     
     // Cell
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tView.clpDelegate?.collapsibleTableView?(tView, cellForRowAt: indexPath) ?? UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "DefaultCell")
+        return tView.clpDelegate?.collapsibleTableView(tView, cellForRowAt: indexPath) ?? UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "DefaultCell")
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tView.clpDelegate?.collapsibleTableView?(tView, heightForRowAt: indexPath) ?? UITableViewAutomaticDimension
+        return tView.clpDelegate?.collapsibleTableView(tView, heightForRowAt: indexPath) ?? UITableView.automaticDimension
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tView.clpDelegate?.collapsibleTableView?(tView, didSelectRowAt: indexPath)
+        tView.clpDelegate?.collapsibleTableView(tView, didSelectRowAt: indexPath)
     }
     
     // Header
     open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = (tView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader) ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         
-        let title = tView.clpDelegate?.collapsibleTableView?(tView, sectionInfoAt: section).name ?? ""
+        let title = tView.clpDelegate?.collapsibleTableView(tView, sectionInfoAt: section)?.name ?? ""
         
         header.titleLabel.text = title
         header.arrowLabel.text = ">"
@@ -54,11 +54,11 @@ open class CollapsibleTableViewDataDelegate: NSObject, UITableViewDataSource, UI
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return tView.clpDelegate?.collapsibleTableView?(tView, heightForHeaderInSection: section) ?? 44.0
+        return tView.clpDelegate?.collapsibleTableView(tView, heightForHeaderInSection: section) ?? 44.0
     }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return tView.clpDelegate?.collapsibleTableView?(tView, heightForFooterInSection: section) ?? 0.0
+        return tView.clpDelegate?.collapsibleTableView(tView, heightForFooterInSection: section) ?? 0.0
     }
 }
 

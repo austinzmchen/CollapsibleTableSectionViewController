@@ -14,7 +14,7 @@ class MBCollapsibleTableViewDataDelegate: CollapsibleTableViewDataDelegate {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "kMBCollapsibleTableViewHeader") as! MBCollapsibleTableViewHeader
         
-        guard let sectionInfo = tView.clpDelegate?.collapsibleTableView?(tableView, sectionInfoAt: section)
+        guard let sectionInfo = tView.clpDelegate?.collapsibleTableView(tableView, sectionInfoAt: section)
             else { return header }
         
         header.titleLabel.text = sectionInfo.name
@@ -28,7 +28,7 @@ class MBCollapsibleTableViewDataDelegate: CollapsibleTableViewDataDelegate {
         if sectionInfo.name ~= NSLocalizedString("Login & Security", comment: "") {
             header.separatorStyle = .none
         }
-        else if section + 1 == tView.clpDelegate?.numberOfSections?(tableView) ?? 0 {
+        else if section + 1 == tView.clpDelegate?.numberOfSections(tableView) ?? 0 {
             header.separatorStyle = .none
         }
         else {
@@ -56,7 +56,7 @@ class MBCollapsibleTableViewDataDelegate: CollapsibleTableViewDataDelegate {
 
         var footer: MBCollapsibleTableViewFooter?
         
-        if let sectionInfo = tView.clpDelegate?.collapsibleTableView?(tableView, sectionInfoAt: section),
+        if let sectionInfo = tView.clpDelegate?.collapsibleTableView(tableView, sectionInfoAt: section),
             sectionInfo.name ~= NSLocalizedString("Login & Security", comment: "") {
             
             let reusableFooter = tableView.dequeueReusableHeaderFooterView(withIdentifier: "kMBCollapsibleTableViewFooter") as! MBCollapsibleTableViewFooter

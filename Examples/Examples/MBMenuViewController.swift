@@ -39,7 +39,7 @@ class MBMenuViewController: UIViewController {
 }
 
 extension MBMenuViewController: CollapsibleTableSectionDelegate {
-
+    
     func shouldCollapseOthers(_ tableView: UITableView) -> Bool {
         return true
     }
@@ -48,7 +48,7 @@ extension MBMenuViewController: CollapsibleTableSectionDelegate {
         return sections.count
     }
 
-    func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection {
+    func collapsibleTableView(_ tableView: UITableView, sectionInfoAt section: Int) -> TableSection? {
         let section: TableSection = sections[section]
         if section.icon == "user_icon" {
             section.name = "John Appleseed"

@@ -25,9 +25,9 @@ class MBCollapsibleTableView: CollapsibleTableView, CollapsibleTableViewHeaderDe
     }
     
     override func toggleSection(_ section: Int) {
-        clpDelegate?.collapsibleTableView?(self, didSelectSectionHeaderAt: section)
+        clpDelegate?.collapsibleTableView(self, didSelectSectionHeaderAt: section)
         
-        guard let sectionInfo = clpDelegate?.collapsibleTableView?(self, sectionInfoAt: section)
+        guard let sectionInfo = clpDelegate?.collapsibleTableView(self, sectionInfoAt: section)
             else { return }
         guard sectionInfo.items.count > 0 else { return } // not do anything with incollapsible ones
         

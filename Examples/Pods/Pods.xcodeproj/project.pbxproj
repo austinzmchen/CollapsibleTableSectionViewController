@@ -335,40 +335,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17531BDF61B2BEA622E9D2037A728B09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05D9A027C1D0D672288F005FC1E5EDC5 /* CollapsibleTableSectionViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController.modulemap";
-				PRODUCT_MODULE_NAME = CollapsibleTableSectionViewController;
-				PRODUCT_NAME = CollapsibleTableSectionViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		4BE4B4F278DF996ECB2D654954763D5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8303BFDD711752EE8725485419663CA1 /* Pods-Examples.release.xcconfig */;
@@ -504,6 +470,38 @@
 			};
 			name = Debug;
 		};
+		B2C659C83670302BC5D5C49B0682D256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D9A027C1D0D672288F005FC1E5EDC5 /* CollapsibleTableSectionViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CollapsibleTableSectionViewController/CollapsibleTableSectionViewController.modulemap";
+				PRODUCT_MODULE_NAME = CollapsibleTableSectionViewController;
+				PRODUCT_NAME = CollapsibleTableSectionViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,7 +561,7 @@
 			};
 			name = Release;
 		};
-		FE233AA0C5D2A45348B74A226C7F160F /* Debug */ = {
+		FB7B7D703DBF0AED1212BA88E8F3822B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05D9A027C1D0D672288F005FC1E5EDC5 /* CollapsibleTableSectionViewController.xcconfig */;
 			buildSettings = {
@@ -587,13 +585,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -610,8 +610,8 @@
 		72C32515E98CA284B7B217525E8762B3 /* Build configuration list for PBXNativeTarget "CollapsibleTableSectionViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE233AA0C5D2A45348B74A226C7F160F /* Debug */,
-				17531BDF61B2BEA622E9D2037A728B09 /* Release */,
+				B2C659C83670302BC5D5C49B0682D256 /* Debug */,
+				FB7B7D703DBF0AED1212BA88E8F3822B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
