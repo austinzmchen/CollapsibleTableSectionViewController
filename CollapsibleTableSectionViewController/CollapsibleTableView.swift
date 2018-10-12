@@ -82,7 +82,7 @@ open class CollapsibleTableView: UITableView {
         
         // Auto resizing the height of the cell
         estimatedRowHeight = 44.0
-        rowHeight = UITableView.automaticDimension
+        rowHeight = UITableViewAutomaticDimension
     }
     
     // Delegate method

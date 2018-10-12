@@ -31,7 +31,7 @@ open class CollapsibleTableViewDataDelegate: NSObject, UITableViewDataSource, UI
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tView.clpDelegate?.collapsibleTableView(tView, heightForRowAt: indexPath) ?? UITableView.automaticDimension
+        return tView.clpDelegate?.collapsibleTableView(tView, heightForRowAt: indexPath) ?? UITableViewAutomaticDimension
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

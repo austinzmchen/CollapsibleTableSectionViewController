@@ -27,7 +27,7 @@ extension CollapseByDefaultExampleViewController: CollapsibleTableSectionDelegat
     }
     
     func collapsibleTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return UITableViewAutomaticDimension
     }
     
     func collapsibleTableView(_ tableView: UITableView, didSelectSectionHeaderAt section: Int) {}
